@@ -1,0 +1,16 @@
+.layout {
+    width: calc(100% - 32px);
+    max-width: 1152px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    &__main {
+        flex: 1 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc(100% - 64px);
+    }
+}

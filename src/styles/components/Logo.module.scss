@@ -1,0 +1,10 @@
+@use '../mixins';
+
+.logo {
+    @include mixins.flex (flex-start, center);
+
+    &__img {
+        width: 104px;
+        height: 32px;
+    }
+}

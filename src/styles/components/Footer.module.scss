@@ -1,0 +1,27 @@
+@use '../mixins';
+
+.footer {
+    @include mixins.flex (space-between, center);
+    flex: 0 0 auto;
+    padding: 24px 0;
+    border-top: 1px solid var(--light-blue);
+
+    &__copyright {
+        @include mixins.font(14px, 400, 100%);
+        color: var(--gray);
+    }
+
+    &__link {
+        display: flex;
+    }
+
+    &__icons {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__icon {
+        width: 32px;
+        height: 32px;
+    }
+}

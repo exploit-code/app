@@ -1,0 +1,33 @@
+:root {
+    --main-bg-color: #191b26;
+    --purple: #a343ff;
+    --green: #3edaa6;
+    --white: ghostwhite;
+    --gray: #8b949e;
+    --light-blue: #55c5e1;
+    --pink: #da70d6;
+    --transparent: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+html {
+    background-color: var(--main-bg-color);
+}
+
+body {
+    background-color: var(--main-bg-color);
+    overflow-x: hidden;
+
+    @media (prefers-color-scheme: dark) {
+        color: #fff;
+        background: var(--main-bg-color);
+    }
+}

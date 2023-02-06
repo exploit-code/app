@@ -1,0 +1,7 @@
+@use '../mixins';
+
+.experience {
+    @include mixins.margin-block;
+    padding: 24px 0;
+    background-color: crimson;
+}
