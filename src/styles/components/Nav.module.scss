@@ -8,18 +8,6 @@
         gap: 24px;
     }
 
-    &__link {
-        @include mixins.flex (flex-start, center);
-        color: var(--gray);
-        @include mixins.font(16px, 400, 100%);
-        transition: all .2s ease-out;
-
-        &:hover {
-            color: var(--green);
-            text-shadow: 0 0 10px var(--purple), 0 0 20px var(--purple), 0 0 20px var(--purple), 0 0 20px var(--purple);
-        }
-    }
-
     @media screen and (min-width: 768px){
         @include mixins.flex (flex-start, center);
     }

@@ -8,6 +8,7 @@
     height: 24px;
     background-color: var(--transparent);
     cursor: pointer;
+    z-index: 1;
 
     &__line {
         height: 2px;

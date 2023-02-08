@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import About from '@/components/About'
 import Experience from '@/components/Experience'
-import Work from '@/components/Work'
-import Contact from '@/components/Contact'
+import Projects from '@/components/Projects'
+import Contacts from '@/components/Contacts'
+// import NavModal from '@/components/NavModal'
 
 export default function Home_page() {
     return (
@@ -14,10 +15,12 @@ export default function Home_page() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
+            {/* <NavModal /> */}
+
             <About />
             <Experience />
-            <Work />
-            <Contact />
+            <Projects />
+            <Contacts />
         </>
     )
 }
