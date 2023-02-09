@@ -1,7 +1,0 @@
-@use '../mixins';
-
-.contacts {
-    @include mixins.margin-block;
-    padding: 24px 0;
-    background-color: var(--purple);
-}

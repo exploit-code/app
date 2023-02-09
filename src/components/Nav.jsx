@@ -1,7 +1,7 @@
 import styles from '../styles/components/Nav.module.scss'
 import NavItem from './NavItem'
 
-export default function Nav({ navData}) {
+export default function Nav({ navData }) {
 
     return (
         <nav className={styles.nav}>

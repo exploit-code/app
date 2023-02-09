@@ -1,7 +1,11 @@
 @use '../mixins';
 
 .experience {
-    @include mixins.margin-block;
+    @include mixins.margin(32px, 0);
     padding: 24px 0;
     background-color: crimson;
+
+    @media screen and (min-width: 768px) {
+        @include mixins.margin(48px, 0);
+    }
 }

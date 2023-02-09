@@ -10,10 +10,6 @@
     line-height: $h;
 }
 
-@mixin margin-block {
-    margin: 24px 0;
-
-    @media screen and (min-width: 768px) {
-        margin: 40px 0;
-    }
+@mixin margin($tb, $rl) {
+    margin: $tb $rl;
 }

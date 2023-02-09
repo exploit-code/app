@@ -1,11 +1,11 @@
 @use '../mixins';
 
-.about {
+.skills {
     @include mixins.margin(32px, 0);
     padding: 24px 0;
-    background-color: deeppink;
+    background-color: var(--purple);
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px){
         @include mixins.margin(48px, 0);
     }
 }

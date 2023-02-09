@@ -1,7 +1,0 @@
-@use '../mixins';
-
-.work {
-    @include mixins.margin-block;
-    padding: 24px 0;
-    background-color: coral;
-}

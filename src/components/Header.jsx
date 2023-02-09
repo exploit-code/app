@@ -12,9 +12,9 @@ export default function Header() {
     const navData = [
         { title: 'Главная', link: '/', key: 'home', setPopupMenuActive },
         { title: 'Обо мне', link: '/about', key: 'about', setPopupMenuActive },
-        { title: 'Опыт работы', link: '/experience', key: 'experience', setPopupMenuActive },
+        { title: 'Навыки', link: '/skills', key: 'skills', setPopupMenuActive },
         { title: 'Проекты', link: '/projects', key: 'projects', setPopupMenuActive },
-        { title: 'Контакты', link: '/contacts', key: 'contacts', setPopupMenuActive },
+        { title: 'Опыт работы', link: '/experience', key: 'experience', setPopupMenuActive },
     ]
 
     return (

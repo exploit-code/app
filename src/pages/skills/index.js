@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Contact from '@/components/Contacts'
+import Contact from '@/components/Skills'
 
-export default function Contacts_page() {
+export default function Skills_page() {
     return (
         <>
             <Head>

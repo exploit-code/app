@@ -1,0 +1,24 @@
+@use '../mixins';
+
+.projects {
+    @include mixins.margin(32px, 0);
+
+    &__list {
+        display: grid;
+        gap: 24px;
+    }
+
+    @media screen and (min-width: 480px) {
+        &__list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        @include mixins.margin(48px, 0);
+        &__list {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+    }
+}

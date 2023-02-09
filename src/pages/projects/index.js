@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Projects from '@/components/Projects'
+import ProjectsList from '@/components/ProjectsList'
 
 export default function Work_page() {
   return (
@@ -11,7 +11,7 @@ export default function Work_page() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Projects />
+      <ProjectsList />
     </>
   )
 }
