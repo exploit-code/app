@@ -10,6 +10,6 @@
     line-height: $h;
 }
 
-@mixin margin($tb, $rl) {
-    margin: $tb $rl;
+@mixin margin($t, $r, $b, $l) {
+    margin: $t $r $b $l;
 }

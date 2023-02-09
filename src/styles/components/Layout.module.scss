@@ -5,9 +5,13 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    gap: 64px;
 
     &__main {
         flex: 1 0 auto;
+        display: grid;
+        gap: 64px;
+        align-items: baseline;
     }
 
     @media screen and (min-width: 768px) {
