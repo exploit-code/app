@@ -1,0 +1,35 @@
+@use '../../styles/mixins';
+
+.notFound {
+    @include mixins.flex(center, flex-end);
+    flex-direction: column;
+    gap: 16px;
+    height: calc(100vh - 162px - 128px);
+
+    &__code {
+        @include mixins.font(24px, 400, 100%);
+        color: var(--light-blue);
+    }
+
+    &__line {
+        background-color: var(--purple);
+        height: 2px;
+        width: 62px;
+    }
+
+    &__message {
+        @include mixins.font(16px, 400, 100%);
+        color: var(--green);
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+
+        &__line {
+            background-color: var(--purple);
+            height: 62px;
+            width: 2px;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Contact from '@/components/Skills'
+import Contact from '@/components/Skills/Skills'
 
 export default function Skills_page() {
     return (

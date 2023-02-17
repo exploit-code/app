@@ -1,7 +1,0 @@
-@use '../mixins';
-
-.header {
-    @include mixins.flex (space-between, center);
-    padding: 24px 0;
-    border-bottom: 1px solid var(--light-blue);
-}

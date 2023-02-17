@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Experience from '@/components/Experience'
+import Experience from '@/components/Experience/Experience'
 
 export default function Experience_page() {
     return (

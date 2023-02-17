@@ -1,6 +1,6 @@
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/Layout'
 import '../styles/globals.scss'
-import '../styles/components/Layout.module.scss'
+import '../components/Layout/Layout.module.scss'
 import { Poppins } from '@next/font/google'
 
 const poppins = Poppins({

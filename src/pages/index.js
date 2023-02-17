@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import About from '@/components/About'
-import Experience from '@/components/Experience'
-import ProjectsList from '@/components/ProjectsList'
-import Skills from '@/components/Skills'
+import About from '@/components/About/About'
+import Experience from '@/components/Experience/Experience'
+import ProjectsList from '@/components/ProjectsList/ProjectsList'
+import Skills from '@/components/Skills/Skills'
 
 export default function Home_page() {
     return (

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import ProjectsList from '@/components/ProjectsList'
+import ProjectsList from '@/components/ProjectsList/ProjectsList'
 
 export default function Work_page() {
   return (

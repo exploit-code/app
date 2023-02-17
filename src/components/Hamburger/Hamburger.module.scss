@@ -1,0 +1,41 @@
+@use '../../styles/mixins';
+
+.hamburger {
+    @include mixins.flex (space-between, flex-end);
+    flex-direction: column;
+    border: none;
+    width: 32px;
+    height: 24px;
+    background-color: var(--transparent);
+    cursor: pointer;
+
+    &__line {
+        height: 2px;
+        width: 100%;
+        transition: all .2s ease-out;
+
+        &_top {
+            background-color: var(--light-blue);
+            width: 100%;
+        }
+
+        &_center {
+            background-color: var(--purple);
+            width: 75%;
+        }
+
+        &_bottom {
+            background-color: var(--green);
+            width: 50%;
+        }
+    }
+
+    &:hover > .hamburger__line {
+        width: 100%;
+        transition: all .2s ease-out;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}

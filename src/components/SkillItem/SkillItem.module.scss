@@ -1,0 +1,30 @@
+@use '../../styles/mixins';
+
+.skill {
+    display: grid;
+    gap: 16px;
+
+    &__title {
+        @include mixins.font(16px, 400, 100%);
+        text-transform: uppercase;
+        color: var(--white);
+    }
+
+    &__progress {
+        height: 2px;
+        width: 100%;
+        background-color: var(--darck-gray);
+        position: relative;
+
+        &_html {
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                height: 2px;
+                width: 75%;
+                background-color: red;
+            }
+        }
+    }
+}
