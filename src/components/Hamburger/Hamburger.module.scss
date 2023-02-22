@@ -1,31 +1,28 @@
 @use '../../styles/mixins';
 
 .hamburger {
-    @include mixins.flex (space-between, flex-end);
+    @include mixins.flex (center, flex-end);
     flex-direction: column;
+    gap: 8px;
     border: none;
     width: 32px;
     height: 24px;
     background-color: var(--transparent);
     cursor: pointer;
+    position: relative;
+    z-index: 15;
 
     &__line {
-        height: 2px;
+        height: 1px;
         width: 100%;
         transition: all .2s ease-out;
+        background-color: var(--white);
 
         &_top {
-            background-color: var(--light-blue);
             width: 100%;
         }
 
-        &_center {
-            background-color: var(--purple);
-            width: 75%;
-        }
-
         &_bottom {
-            background-color: var(--green);
             width: 50%;
         }
     }
@@ -33,6 +30,27 @@
     &:hover > .hamburger__line {
         width: 100%;
         transition: all .2s ease-out;
+    }
+
+    &_active {
+        width: 32px;
+        height: 32psx;
+        position: relative;
+
+        & > .hamburger__line {
+            position: absolute;
+
+            &_top {
+                rotate: 0 0 1 45deg;
+                z-index: 15;
+            }
+
+            &_bottom {
+                rotate: 0 0 1 -45deg;
+                z-index: 15;
+                width: 100%;
+            }
+        }
     }
 
     @media screen and (min-width: 768px) {

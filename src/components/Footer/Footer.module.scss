@@ -4,7 +4,7 @@
     @include mixins.flex (space-between, center);
     flex: 0 0 auto;
     padding: 24px 0;
-    border-top: 1px solid var(--light-blue);
+    border-top: 1px solid var(--gray);
 
     &__copyright {
         @include mixins.font(14px, 400, 100%);

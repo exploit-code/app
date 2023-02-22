@@ -3,15 +3,14 @@
 .navItem {
     &__link {
         @include mixins.flex (flex-start, center);
-        color: inherit;
+        color: var(--gray);
         font-size: inherit;
         font-weight: inherit;
         line-height: inherit;
         transition: all .2s ease-out;
 
         &:hover {
-            color: var(--green);
-            text-shadow: 0 0 10px var(--purple), 0 0 20px var(--purple), 0 0 20px var(--purple), 0 0 20px var(--purple);
+            color: var(--white);
         }
     }
 }

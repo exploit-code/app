@@ -13,24 +13,36 @@
     right: 0;
     overflow: hidden;
     transform: scale(0);
-    // transition: all .2s ease;
     opacity: 0;
+    padding: 16px;
+
+    &__nav {
+        width: 100%
+    }
 
     &__list {
-        @include mixins.flex(center, center);
-        @include mixins.font(20px, 700, 100%);
+        @include mixins.flex(center, flex-end);
+        @include mixins.font(16px, 400, 100%);
         flex-direction: column;
-        gap: 16px;
+        gap: 8px;
         color: var(--white);
+
+        &>li {
+            width: 100%;
+            border-bottom: 1px solid var(--gray);
+
+            &>a {
+                padding: 12px 0;
+            }
+        }
     }
 
     &_active {
         @include mixins.flex(center, center);
         transform: scale(1);
-        // transition: all .2s ease;
         overflow: visible;
         opacity: 1;
-        z-index: 1;
+        z-index: 10;
     }
 
     @media screen and (min-width: 768px) {

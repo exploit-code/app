@@ -3,4 +3,24 @@
 .skills {
     display: grid;
     gap: 32px;
+
+    &__box {
+        display: grid;
+        gap: 16px;
+
+        &_text {
+            gap: 16px;
+        }
+    }
+
+    &__title {
+        @include mixins.font(20px, 700, 130%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(90deg, var(--blue), var(--sky-blue));
+    }
+
+    &__description {
+        color: var(--gray);
+    }
 }

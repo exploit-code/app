@@ -1,15 +1,18 @@
 :root {
-    --main-bg-color: #191b26;
-    --modal-bg-color: rgba(25, 27, 38, .8);
-    --blur-bg: blur(8px);
-    --purple: #a343ff;
-    --green: #3edaa6;
-    --white: #dcdcdc;
-    --gray: #8b949e;
-    --darck-gray: #373737;
-    --light-blue: #55c5e1;
+    --modal-bg-color: rgba(0, 0, 0, .7);
+    --blur-bg: blur(16px);
     --transparent: transparent;
-    --pink: #da70d6;
+    --black: #000000;
+    --white: #ffffff;
+    --red: #ff4d4d;
+    --yellow: #f9cb28;
+    --blue: #007cf0;
+    --sky-blue: #00dfd8;
+    --purple: #7928ca;
+    --pink: #ff0080;
+    --gray: #888888;
+    --green: #50e3c2;
+
 }
 
 * {
@@ -22,15 +25,6 @@
 }
 
 html {
-    background-color: var(--main-bg-color);
-}
-
-body {
-    background-color: var(--main-bg-color);
-    overflow-x: hidden;
-
-    @media (prefers-color-scheme: dark) {
-        color: #fff;
-        background: var(--main-bg-color);
-    }
+    background-color: var(--black);
+    text-rendering: optimizeLegibility;
 }

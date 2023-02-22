@@ -1,7 +1,7 @@
 @use '../../styles/mixins';
 
 .header {
-    @include mixins.flex (space-between, center);
+    @include mixins.flex (flex-end, center);
     padding: 24px 0;
-    border-bottom: 1px solid var(--light-blue);
+    border-bottom: 1px solid var(--gray);
 }
