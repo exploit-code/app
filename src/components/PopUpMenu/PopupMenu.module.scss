@@ -17,7 +17,9 @@
     padding: 16px;
 
     &__nav {
-        width: 100%
+        width: 100%;
+        display: grid;
+        gap: 32px;
     }
 
     &__list {
@@ -35,6 +37,11 @@
                 padding: 12px 0;
             }
         }
+    }
+
+    &__buttons {
+        display: grid;
+        gap: 16px;
     }
 
     &_active {

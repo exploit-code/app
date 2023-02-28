@@ -1,0 +1,36 @@
+@use '../../styles/mixins';
+
+.button {
+    @include mixins.flex(center, center);
+    @include mixins.font(16px, 400, 100%);
+    padding: 8px;
+    border: 1px solid var(--transparent);
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    transition: all 0.2s ease-out;
+
+    &_default {
+        background-color: var(--white);
+        color: var(--black);
+
+        &:hover, &:active {
+            background-color: var(--transparent);
+            color: var(--white);
+            border-color: var(--white);
+        }
+        
+    }
+
+    &_transparent {
+        border: 1px solid var(--gray);
+        color: var(--gray);
+
+        &:hover, &:active {
+            color: var(--white);
+            border-color: var(--white);
+        }
+    }
+}
