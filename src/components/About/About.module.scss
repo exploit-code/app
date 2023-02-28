@@ -1,52 +1,52 @@
-@use '../../styles/mixins';
+@use "../../styles/mixins";
 
 .about {
-    display: grid;
-    gap: 16px;
+  display: grid;
+  gap: 16px;
 
+  &__title {
+    @include mixins.font(38px, 700, 130%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, var(--purple), var(--pink));
+  }
+
+  &__subtitle {
+    @include mixins.font(22px, 400, 130%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, var(--red), var(--yellow));
+  }
+
+  &__description {
+    display: grid;
+    gap: 8px;
+  }
+
+  &__text {
+    @include mixins.font(16px, 400, 130%);
+    color: var(--gray);
+  }
+
+  @media screen and (min-width: 480px) {
     &__title {
-        @include mixins.font(38px, 700, 130%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(90deg, var(--purple), var(--pink));
+      font-size: 48px;
     }
 
     &__subtitle {
-        @include mixins.font(22px, 400, 130%);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-image: linear-gradient(90deg, var(--red), var(--yellow));
+      font-size: 28px;
     }
+  }
 
-    &__description {
-        display: grid;
-        gap: 8px;
+  @media screen and (min-width: 768px) {
+    &__title {
+      font-size: 58px;
     }
+  }
 
-    &__text {
-        @include mixins.font(16px, 400, 130%);
-        color: var(--gray);
+  @media screen and (min-width: 1024px) {
+    &__title {
+      font-size: 68px;
     }
-
-    @media screen and (min-width: 480px) {
-        &__title {
-            font-size: 48px;
-        }
-
-        &__subtitle {
-            font-size: 28px;
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        &__title {
-            font-size: 58px;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        &__title {
-            font-size: 68px;
-        }
-    }
+  }
 }

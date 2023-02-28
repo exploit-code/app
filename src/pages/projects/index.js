@@ -1,5 +1,5 @@
-import Head from 'next/head'
-import ProjectsList from '@/components/ProjectsList/ProjectsList'
+import Head from "next/head";
+import ProjectsList from "@/components/ProjectsList/ProjectsList";
 
 export default function Work_page() {
   return (
@@ -13,5 +13,5 @@ export default function Work_page() {
 
       <ProjectsList />
     </>
-  )
+  );
 }

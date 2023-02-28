@@ -1,0 +1,7 @@
+@use "../../styles/mixins";
+
+.sectionTitle {
+  @include mixins.font(20px, 400, 130%);
+  color: var(--blue);
+  width: max-content;
+}
