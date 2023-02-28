@@ -2,7 +2,12 @@
 
 .skills {
     display: grid;
-    gap: 32px;
+    gap: 16px;
+
+    &__content {
+        display: grid;
+        gap: 32px;
+    }
 
     &__box {
         display: grid;
@@ -22,5 +27,12 @@
 
     &__description {
         color: var(--gray);
+    }
+
+    @media screen and (min-width: 768px) {
+        &__content {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: baseline;
+        }
     }
 }

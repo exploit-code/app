@@ -16,22 +16,25 @@ export default function Skills() {
 
     return (
         <section className={styles.skills}>
-            <div className={styles.skills__box}>
-                <SectionTitle text="Skills" />
-                <p className={styles.skills__description}>
-                    I like to take responsibilities for making aesthetic user interface. I
-                    use modern architecture for this.
-                </p>
-            </div>
+            <SectionTitle text="Skills" />
 
-            <div className={styles.skills__box}>
-                {technologys.map((technology) => (
-                    <SkillItem
-                        technology={technology.name}
-                        key={technology.key}
-                        mod={technology.mod}
-                    />
-                ))}
+            <div className={styles.skills__content}>
+                <div className={styles.skills__box}>
+                    <p className={styles.skills__description}>
+                        I like to take responsibilities for making aesthetic user interface. I
+                        use modern architecture for this.
+                    </p>
+                </div>
+
+                <div className={styles.skills__box}>
+                    {technologys.map((technology) => (
+                        <SkillItem
+                            technology={technology.name}
+                            key={technology.key}
+                            mod={technology.mod}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );
