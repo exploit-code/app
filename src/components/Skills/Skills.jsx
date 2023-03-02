@@ -22,7 +22,6 @@ export default function Skills() {
             <div className={styles.skills__content}>
                 <div className={styles.skills__box}>
                     <p className={styles.skills__description}>I like to take responsibilities for making aesthetic user interface. I use modern architecture for this.</p>
-                    <p className={styles.skills__description}>I enjoy learning new things and can assimilate new ideas quickly.</p>
                 </div>
 
                 <div className={styles.skills__box}>

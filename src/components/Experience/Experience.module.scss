@@ -1,8 +1,8 @@
 @use '../../styles/mixins';
 
 .experience {
-    padding: 24px 0;
-    // background-color: aliceblue;
+    display: grid;
+    gap: 16px;
 }
 
 .tabs {
@@ -16,7 +16,6 @@
 
     &__body {
         color: var(--gray);
-        padding: 8px;
     }
 
     &__list {
@@ -27,12 +26,12 @@
     &__title {
         cursor: pointer;
         padding: 8px 16px;
-        background-color: hsla(0, 0%, 100%, .07);
+        background-color: var(--hsla-black);
         white-space: nowrap;
 
-        // &:not(:last-child) {
-        //     border-right: 1px solid hsla(0, 0%, 100%, .07);
-        // }
+        &_active {
+            color: var(--white);
+        }
     }
 
     &__panel {
@@ -40,5 +39,18 @@
         gap: 16px;
     }
 
+    &__panelTitle {
+        @include mixins.font(16px, 400, 130%);
+    }
 
+    &__panelList {
+        display: grid;
+        gap: 8px;
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+
+    &__panelListItem {
+        @include mixins.font(16px, 400, 130%);
+    }
 }
