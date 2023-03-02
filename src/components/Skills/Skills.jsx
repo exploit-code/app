@@ -8,6 +8,7 @@ export default function Skills() {
         { name: "css", key: "css", mod: "css" },
         { name: "scss", key: "scss", mod: "scss" },
         { name: "js", key: "js", mod: "js" },
+        { name: "alpine js", key: "alpine js", mod: "alpinejs" },
         { name: "react", key: "react", mod: "react" },
         { name: "next js", key: "next js", mod: "nextjs" },
         { name: "photoshop", key: "photoshop", mod: "ps" },
@@ -20,10 +21,8 @@ export default function Skills() {
 
             <div className={styles.skills__content}>
                 <div className={styles.skills__box}>
-                    <p className={styles.skills__description}>
-                        I like to take responsibilities for making aesthetic user interface. I
-                        use modern architecture for this.
-                    </p>
+                    <p className={styles.skills__description}>I like to take responsibilities for making aesthetic user interface. I use modern architecture for this.</p>
+                    <p className={styles.skills__description}>I enjoy learning new things and can assimilate new ideas quickly.</p>
                 </div>
 
                 <div className={styles.skills__box}>

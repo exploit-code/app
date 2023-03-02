@@ -5,10 +5,11 @@ $colors: (
     css: var(--blue),
     scss: var(--pink),
     js: var(--yellow),
+    alpinejs: var(--green),
     react: var(--sky-blue),
     nextjs: var(--white),
     ps: var(--blue),
-    figma: var(--green)
+    figma: var(--sky-blue)
 );
 
 $progress: (
@@ -16,6 +17,7 @@ $progress: (
     css: 85%,
     scss: 80%,
     js: 45%,
+    alpinejs: 40%,
     react: 20%,
     nextjs: 20%,
     ps: 50%,

@@ -2,5 +2,43 @@
 
 .experience {
     padding: 24px 0;
-    background-color: crimson;
+    // background-color: aliceblue;
+}
+
+.tabs {
+    display: grid;
+
+    &__head {
+        display: flex;
+        color: var(--gray);
+        overflow: scroll;
+    }
+
+    &__body {
+        color: var(--gray);
+        padding: 8px;
+    }
+
+    &__list {
+        display: flex;
+        padding-bottom: 16px;
+    }
+
+    &__title {
+        cursor: pointer;
+        padding: 8px 16px;
+        background-color: hsla(0, 0%, 100%, .07);
+        white-space: nowrap;
+
+        // &:not(:last-child) {
+        //     border-right: 1px solid hsla(0, 0%, 100%, .07);
+        // }
+    }
+
+    &__panel {
+        display: grid;
+        gap: 16px;
+    }
+
+
 }
