@@ -1,59 +1,59 @@
 @use "../../styles/mixins";
 
 .hamburger {
-  @include mixins.flex(center, flex-end);
-  flex-direction: column;
-  gap: 8px;
-  border: none;
-  width: 32px;
-  height: 24px;
-  background-color: var(--transparent);
-  cursor: pointer;
-  position: relative;
-  z-index: 15;
-
-  &__line {
-    height: 1px;
-    width: 100%;
-    transition: all 0.2s ease-out;
-    background-color: var(--white);
-
-    &_top {
-      width: 100%;
-    }
-
-    &_bottom {
-      width: 50%;
-    }
-  }
-
-  &:hover > .hamburger__line {
-    width: 100%;
-    transition: all 0.2s ease-out;
-  }
-
-  &_active {
+    @include mixins.flex(center, flex-end);
+    flex-direction: column;
+    gap: 8px;
+    border: none;
     width: 32px;
-    height: 32psx;
+    height: 24px;
+    background-color: var(--transparent);
+    cursor: pointer;
     position: relative;
+    z-index: 15;
 
-    & > .hamburger__line {
-      position: absolute;
-
-      &_top {
-        rotate: 0 0 1 45deg;
-        z-index: 15;
-      }
-
-      &_bottom {
-        rotate: 0 0 1 -45deg;
-        z-index: 15;
+    &__line {
+        height: 1px;
         width: 100%;
-      }
-    }
-  }
+        transition: var(--transition);
+        background-color: var(--white);
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+        &_top {
+            width: 100%;
+        }
+
+        &_bottom {
+            width: 50%;
+        }
+    }
+
+    &:hover>.hamburger__line {
+        width: 100%;
+        transition: var(--transition);
+    }
+
+    &_active {
+        width: 32px;
+        height: 32psx;
+        position: relative;
+
+        &>.hamburger__line {
+            position: absolute;
+
+            &_top {
+                rotate: 0 0 1 45deg;
+                z-index: 15;
+            }
+
+            &_bottom {
+                rotate: 0 0 1 -45deg;
+                z-index: 15;
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }

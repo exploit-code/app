@@ -1,5 +1,5 @@
 :root {
-    --modal-bg-color: rgba(0, 0, 0, 0.7);
+    --modal-bg-color: rgba(0, 0, 0, 0.2);
     --blur-bg: blur(16px);
     --transparent: transparent;
     --black: #000000;
@@ -10,9 +10,10 @@
     --sky-blue: #00dfd8;
     --purple: #7928ca;
     --pink: #ff0080;
-    --gray: #888888;
+    --gray: #a9a9a9;
     --green: #50e3c2;
     --hsla-black: hsla(0, 0%, 100%, .07);
+    --transition: all .2s ease-out;
 }
 
 * {

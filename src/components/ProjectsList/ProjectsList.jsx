@@ -64,7 +64,7 @@ export default function Projects() {
 
   return (
     <section className={styles.projects}>
-      <SectionTitle text="Projects" />
+      <SectionTitle text="Проекты" />
       <div className={styles.projects__list}>
         {projects.map((projectItem) => (
           <ProjectItem data={projectItem} key={projectItem.key} />

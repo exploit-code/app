@@ -17,7 +17,7 @@
         @include mixins.font(14px, 400, 100%);
         width: max-content;
         color: var(--gray);
-        transition: all .2s ease-out;
+        transition: var(--transition);
 
         &:hover {
             color: var(--white);

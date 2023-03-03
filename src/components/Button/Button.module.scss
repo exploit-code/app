@@ -10,25 +10,28 @@
     cursor: pointer;
     user-select: none;
     outline: none;
-    transition: all 0.2s ease-out;
+    transition: var(--transition);
+    width: 100%;
 
     &_default {
         background-color: var(--white);
         color: var(--black);
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
             background-color: var(--transparent);
             color: var(--white);
             border-color: var(--white);
         }
-        
+
     }
 
     &_transparent {
         border: 1px solid var(--gray);
         color: var(--gray);
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
             color: var(--white);
             border-color: var(--white);
         }

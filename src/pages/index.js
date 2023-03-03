@@ -15,9 +15,9 @@ export default function Home_page() {
             </Head>
 
             <About />
+            <Experience />
             <Skills />
             <ProjectsList />
-            <Experience />
         </>
     );
 }
