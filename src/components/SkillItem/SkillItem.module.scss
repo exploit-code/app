@@ -43,20 +43,21 @@ $progress: (
     &__title {
         @include mixins.font(16px, 400, 100%);
         text-transform: uppercase;
-        color: var(--gray);
+        color: var(--white);
     }
 
     &__progress {
         height: 1px;
         width: 0%;
         z-index: 1;
+        background-color: var(--gray);
 
-        @each $technology,
-        $color in $colors {
-            &_#{$technology} {
-                background-color: $color;
-            }
-        }
+        // @each $technology,
+        // $color in $colors {
+        //     &_#{$technology} {
+        //         background-color: $color;
+        //     }
+        // }
 
         @each $technology,
         $percent in $progress {

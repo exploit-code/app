@@ -12,6 +12,11 @@
         display: flex;
         color: var(--gray);
         overflow: scroll;
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
     }
 
     &__body {
@@ -54,7 +59,8 @@
             border-radius: 20px;
             transition: var(--transition);
 
-            &:hover, &:active {
+            &:hover,
+            &:active {
                 color: var(--white);
             }
         }

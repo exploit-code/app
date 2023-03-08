@@ -1,0 +1,43 @@
+@use '../../styles/mixins';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 16px;
+    background-color: var(--hsla-black);
+
+    color: var(--gray); // ex
+
+    &__head {
+        @include mixins.flex(space-between, flex-start);
+    }
+
+    &__body {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__footer {
+        display: grid;
+        gap: 16px;
+    }
+
+    &__link {
+        @include mixins.font(16px, 400, 100%);
+        width: max-content;
+        color: var(--gray);
+        transition: var(--transition);
+
+        &:hover {
+            color: var(--white);
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+}
